@@ -9,7 +9,7 @@ const Bar = dynamic(() => import('react-chartjs-2').then((mod) => mod.Bar), {
 
 export default function BarChart() {
   return (
-    <div className="lg:w-2/5 p-2 content-center">
+    <div className="lg:w-2/6 p-2 content-center">
       <Bar data={data.default} />
     </div>
   );
