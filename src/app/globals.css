@@ -30,4 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  canvas {
+    /* resolving chartjs responsive issue https://github.com/chartjs/Chart.js/issues/11005 */
+    width: 100% !important;
+    height: 100% !important;
+  }
 }

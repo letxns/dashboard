@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import 'chart.js/auto';
-import * as data from "../utils/mock/LineData.js";
+import * as data from "./BarChart/LineData.js";
 
 export default function LineChart() {
 
@@ -9,7 +9,7 @@ export default function LineChart() {
     });
 
     return (
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3 bg-white border-2 rounded p-2">
             <Line data={data.default} />
         </div>
     )
