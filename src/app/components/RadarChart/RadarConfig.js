@@ -1,16 +1,74 @@
+const datasetOne = [
+    {
+        label: 'Supplier 1',
+        value: 94,
+    },
+    {
+        label: 'Supplier 2',
+        value: 62,
+    },
+    {
+        label: 'Supplier 3',
+        value: 110,
+    },
+    {
+        label: 'Supplier 4',
+        value: 81,
+    },
+    {
+        label: 'Supplier 5',
+        value: 97,
+    },
+    {
+        label: 'Supplier 6',
+        value: 55,
+    },
+    {
+        label: 'Supplier 7',
+        value: 100,
+    },
+]
+
+const datasetTwo = [
+    {
+        label: 'Supplier 1',
+        value: 28,
+    },
+    {
+        label: 'Supplier 2',
+        value: 15,
+    },
+    {
+        label: 'Supplier 3',
+        value: 35,
+    },
+    {
+        label: 'Supplier 4',
+        value: 19,
+    },
+    {
+        label: 'Supplier 5',
+        value: 26,
+    },
+    {
+        label: 'Supplier 6',
+        value: 22,
+    },
+    {
+        label: 'Supplier 7',
+        value: 38,
+    },
+];
+
+const dataLabels = datasetOne.map((item) => item.label);
+const dataFromDatasetOne = datasetOne.map((item) => item.value);
+const dataFromDatasetTwo = datasetTwo.map((item) => item.value);
+
 const config = {
-    labels: [
-        'Supplier 1',
-        'Supplier 2',
-        'Supplier 3',
-        'Supplier 4',
-        'Supplier 5',
-        'Supplier 6',
-        'Supplier 7'
-    ],
+    labels: dataLabels,
     datasets: [{
         label: 'Sells',
-        data: [94, 62, 110, 81, 97, 55, 100],
+        data: dataFromDatasetOne,
         fill: true,
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
         borderColor: 'rgb(54, 162, 235)',
@@ -20,7 +78,7 @@ const config = {
         pointHoverBorderColor: 'rgb(54, 162, 235)',
     }, {
         label: 'Complainings',
-        data: [28, 15, 35, 19, 26, 22, 38],
+        data: dataFromDatasetTwo,
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
