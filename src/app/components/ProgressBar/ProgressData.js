@@ -1,7 +1,7 @@
 const data = [
     {
       name: "Progress 1",
-      value: 54,
+      value: "54",
       icon: "up",
       color: "text-green-500"
     },
